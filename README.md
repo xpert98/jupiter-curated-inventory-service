@@ -1,1 +1,1 @@
-# jupiter_gold_record_service
+# jupiter-gold-record-service
