@@ -1,1 +1,1 @@
-# jupiter-gold-record-service
+# jupiter-curated-inventory-service
