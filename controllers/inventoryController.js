@@ -132,7 +132,7 @@ exports.inventoryItemCreate = function (req, res) {
                 res.status(400).json({error});
             }
             else {
-                res.status(201).send({
+                res.status(200).send({
                     result: result.rows[0],
                 });
             }
@@ -189,7 +189,7 @@ exports.inventoryItemUpdate = function (req, res) {
     }
 
     var businessUnitId = null;
-    if (typeof(req.body.businessUnitid) !== 'undefined') {
+    if (typeof(req.body.businessUnitId) !== 'undefined') {
         businessUnitId = req.body.businessUnitId;
     }
 
@@ -311,7 +311,7 @@ exports.inventoryItemUpdate = function (req, res) {
                 res.status(400).json({error});
             }
             else {
-                res.status(201).send({
+                res.status(200).send({
                     result: result.rows[0],
                 });
             }

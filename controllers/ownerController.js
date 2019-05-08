@@ -14,7 +14,7 @@ exports.ownerCreate = function (req, res) {
                 res.status(400).json({error});
             }
             else {
-                res.status(201).send({
+                res.status(200).send({
                     result: result.rows[0],
                 });
             }
@@ -75,7 +75,7 @@ exports.ownerUpdate = function (req, res) {
                 res.status(400).json({error});
             }
             else {
-                res.status(201).send({
+                res.status(200).send({
                     result: result.rows[0],
                 });
             }
