@@ -1,4 +1,4 @@
-# jupiter-curated-inventory-service
+# Jupiter Curated Inventory Service
 The Jupiter Curated Inventory Service provides data management functionality for "gold" application inventory records.  These records have references to metadata that is also managed via the service.  
 
 The Curated Inventory Service provides CRUD operations and uses PostgreSQL for data storage.
