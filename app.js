@@ -6,7 +6,7 @@ var bodyParser = require('body-parser');
 var app = express();
 var db = require('./db');
 
-var application = require('./routes/inventoryRoute');
+var application = require('./routes/applicationRoute');
 var businessUnit = require('./routes/businessUnitRoute');
 var dataClassification = require('./routes/dataClassificationRoute');
 var deploymentEnvironment = require('./routes/deploymentEnvironmentRoute');
