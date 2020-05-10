@@ -3,14 +3,35 @@ The Jupiter Curated Inventory Service provides data management functionality for
 
 The Curated Inventory Service provides CRUD operations and uses PostgreSQL for data storage.
 
-## Prerequisites
+## Deployment
+
+### Production Environment
+
+Docker Swarm is recommended for production deployment.  
+
+Additional Docker Swarm deployment resources here: https://github.com/xpert98/jupiter-docker
+
+#### Database Setup
+SQL commands necessary to set up tables in the schema are included in db.sql.
+Seed data is included in db_data_seed.sql.
+1. Log into Postgres and create a new database
+1. Execute the statements from db.sql to create the schema
+1. Execute the statements from db_data_seed.sql to seed initial data into the database
+
+### Development Environment
+#### Prerequisites
 * Node.js 11.9.0 or greater
 * PostgreSQL 10 or greater
+  * A database and user account should be created prior to running the Curated Inventory Service
 
-## Database Setup
-SQL commands necessary to set up tables in the schema are included in db.sql.  The script assumes the database user name to be "jupiter" so change that to suit the authentication set up for your database.
+#### Database Setup
+SQL commands necessary to set up tables in the schema are included in db.sql.
+Seed data is included in db_data_seed.sql.
+1. Log into Postgres and create a new database
+1. Execute the statements from db.sql to create the schema
+1. Execute the statements from db_data_seed.sql to seed initial data into the database
 
-## Running the Curated Inventory Service
+#### Running the Curated Inventory Service
 First, set environment variables or create a .env file (in the root directory alongside server.js) for the following:
 
 * PG_HOST
